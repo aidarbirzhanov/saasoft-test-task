@@ -1,8 +1,8 @@
-export type RecordType = 'Local' | 'LDAP'
+export type RecordType = 'Local' | 'LDAP';
 
 export interface Account {
-  tags: string[]
-  recordType: RecordType,
-  login: string,
-  password?: string
+  tags: { text: string }[];
+  recordType: RecordType;
+  login: string;
+  password?: string;
 }
